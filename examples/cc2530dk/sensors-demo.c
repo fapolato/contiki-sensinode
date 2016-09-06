@@ -98,8 +98,8 @@ PROCESS_THREAD(buttons_test_process, ev, data)
     /* If we woke up after a sensor event, inform what happened */
     sensor = (struct sensors_sensor *)data;
     if(sensor == &button_sensor) {
-      PRINTF("Button Press\n");
-      leds_toggle(LEDS_GREEN);
+      PRINTF("Botão Pressionado\n");
+      leds_toggle(LEDS_YELLOW);
     }
   }
 
